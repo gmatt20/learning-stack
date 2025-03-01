@@ -20,13 +20,17 @@ int main(){
   // if(stackOne.isEmpty()){
   //   cout << "List is empty" << endl;
   // }
+  // stackOne.push(10);
+  // stackOne.push(10);
+  // stackOne.push(10);
+  // stackOne.push(10);
+  // stackOne.push(10);
+  // stackOne.display();
+  // stackOne.push(10);
+
   stackOne.push(10);
-  stackOne.push(10);
-  stackOne.push(10);
-  stackOne.push(10);
-  stackOne.push(10);
-  stackOne.display();
-  stackOne.push(10);
+  stackOne.pop();
+  stackOne.pop();
 
   return 0;
 }
