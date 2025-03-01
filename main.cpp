@@ -127,7 +127,6 @@ int main(){
       userStack.display();
     }
   }
-  }
 
   return 0;
 }
