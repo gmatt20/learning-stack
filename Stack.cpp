@@ -18,13 +18,16 @@ void Stack::push(int val){
     arr[top] = val;
   }
 }
-void Stack::pop(){
+int Stack::pop(){
   if(isEmpty()){
     cout << "ERROR: Stack Underflow" << endl;
     exit(EXIT_FAILURE);
   }
+  int poppedVal = arr[top];
   arr[top] = 0;
   top--;
+
+  return poppedVal;
 }
 bool Stack::isEmpty(){
   bool isEmpty = true;
@@ -43,5 +46,14 @@ bool Stack::isFull(){
 void Stack::display(){
   for(int i = 0; i < 5; i++){
     cout << arr[i] << endl;
+  }
+}
+int Stack::size(){
+  return (top + 1);
+}
+void Stack::clear(){
+  for(int i = 0; i < 5; i++){
+    arr[i] = 0;
+    top--;
   }
 }

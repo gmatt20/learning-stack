@@ -8,14 +8,14 @@ class Stack{
   public:
     Stack();
     void push(int val);
-    void pop();
+    int pop();
     bool isEmpty();
     bool isFull();
     int peek();
     int size();
     void change();
     void display();
-
+    void clear();
 };
 
 #endif
