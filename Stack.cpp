@@ -44,7 +44,7 @@ bool Stack::isFull(){
   return isFull;
 }
 void Stack::display(){
-  for(int i = 0; i < 5; i++){
+  for(int i = 5; i >= 0; i--){
     cout << arr[i] << endl;
   }
 }
