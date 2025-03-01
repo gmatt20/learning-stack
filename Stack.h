@@ -7,7 +7,7 @@ class Stack{
     int arr[5];
   public:
     Stack();
-    void push();
+    void push(int val);
     void pop();
     bool isEmpty();
     bool isFull();
