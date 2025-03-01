@@ -48,8 +48,31 @@ void Stack::display(){
     cout << arr[i] << endl;
   }
 }
+int Stack::peek(int index){
+  if(isEmpty()){
+    cout << "ERROR: Stack Underflow" << endl;
+    exit(EXIT_FAILURE);
+  }
+  if(index < 0 || index > top){
+    cout << "ERROR: Accessing out of bounds" << endl;
+    exit(EXIT_FAILURE);
+  }
+  return arr[index];
+}
 int Stack::size(){
   return (top + 1);
+}
+void Stack::change(int index, int value){
+  if(isEmpty()){
+    cout << "ERROR: Stack Underflow" << endl;
+    exit(EXIT_FAILURE);
+  }
+  if(index < 0 || index > top){
+    cout << "ERROR: Accessing out of bounds" << endl;
+    exit(EXIT_FAILURE);
+  }
+  arr[index] = value;
+  cout << "value: " << value << "is now in index: " << index << endl;
 }
 void Stack::clear(){
   for(int i = 0; i < 5; i++){

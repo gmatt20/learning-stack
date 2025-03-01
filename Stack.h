@@ -11,9 +11,9 @@ class Stack{
     int pop();
     bool isEmpty();
     bool isFull();
-    int peek();
+    int peek(int index);
     int size();
-    void change();
+    void change(int index, int value);
     void display();
     void clear();
 };
